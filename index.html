@@ -78,7 +78,7 @@
             <a
               href="#contact_form"
               title="On the way to success!"
-              class="button button-purple"
+              class="button button-purple scrolly"
             >
               <i class="fa-regular fa-handshake"></i>
               I want to work with Elsa!
@@ -135,107 +135,107 @@
       </div>
     </section>
 
-    <section class="main">
+    <section id="contact_form" class="main">
       <div class="container">
-        <h2 class="text-xl">Get in touch with me</h2>
-        <h4 id="contact_form">Form</h4>
-        <form
-          method="POST"
-          action="https://getform.io/f/c0009818-bf6d-4e09-8903-9edabf9e8588"
-        >
-          <div class="col-6 col-12-xsmall">
-            <label for="name">First Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value=""
-              placeholder="Olivia"
-            />
+        <div class="row">
+          <div class="col-6">
+            <header class="major">
+              <h2 class="text-xl">Get in touch with me</h2>
+            </header>
+            <p>Fill out this form to start improving your sales!</p>
+            <img class="full-width-image" src="/images/hello.svg" />
           </div>
-          <div class="col-6 col-12-xsmall">
-            <label for="family-name">Last Name</label>
-            <input
-              type="text"
-              name="family-name"
-              id="family-name"
-              value=""
-              placeholder="Smith"
-            />
+          <div class="col-6">
+            <form
+              method="POST"
+              action="https://getform.io/f/c0009818-bf6d-4e09-8903-9edabf9e8588"
+            >
+              <div>
+                <label for="name">First Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value=""
+                  placeholder="Olivia"
+                  required
+                />
+              </div>
+              <div>
+                <label for="family-name">Last Name</label>
+                <input
+                  type="text"
+                  name="family-name"
+                  id="family-name"
+                  value=""
+                  placeholder="Smith"
+                />
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value=""
+                  placeholder="oliviasmith@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="company">Company *</label>
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  value=""
+                  placeholder="Example Company Inc."
+                  required
+                />
+              </div>
+              <div>
+                <label for="website"
+                  >Company Website / Amazon Brand Store URL</label
+                >
+                <input
+                  type="text"
+                  name="website"
+                  id="website"
+                  value=""
+                  placeholder="www.example.com"
+                />
+              </div>
+              <div>
+                <label for="annual-sales">Annual TOTAL Sales</label>
+                <select name="annual-sales" id="annual-sales">
+                  <option value="none">- Please select -</option>
+                  <option value="new">New to Market</option>
+                  <option value="100K-$1M">100K - $1M</option>
+                  <option value="$1M-$5M">$1M - $5M</option>
+                  <option value="$5M-$10M">$5M - $10M</option>
+                  <option value="$10M-$50M">$10M - $50M</option>
+                  <option value="$50M-$200M">$50M - $200M</option>
+                  <option value="$200M-$1B">$200M - $1B</option>
+                  <option value="$1B+">$1B+</option>
+                </select>
+              </div>
+              <div>
+                <label for="message">How would you like me to help? *</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <p>(required*)</p>
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
           </div>
-          <div class="col-12">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value=""
-              placeholder="oliviasmith@example.com"
-            />
-          </div>
-          <div class="col-12">
-            <label for="company">Company</label>
-            <input
-              type="text"
-              name="company"
-              id="company"
-              value=""
-              placeholder="Example Company"
-            />
-            <div class="col-12">
-              <label for="website">Company Website</label>
-              <input
-                type="text"
-                name="website"
-                id="website"
-                value=""
-                placeholder="www.example.com"
-              />
-            </div>
-            <div class="col-12">
-              <label for="sales">Annual TOTAL Sales</label>
-              <select name="sales" id="sales">
-                <option value="none">- Please select -</option>
-                <option value="new">New to Market</option>
-                <option value="100K-$1M">100K - $1M</option>
-                <option value="$1M-$5M">$1M - $5M</option>
-                <option value="$5M-$10M">$5M - $10M</option>
-                <option value="$10M-$50M">$10M - $50M</option>
-                <option value="$50M-$200M">$50M - $200M</option>
-                <option value="$200M-$1B">$200M - $1B</option>
-                <option value="$1B+">$1B+</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label>Tell Me About Your Product and Company (optional)</label>
-              <textarea
-                name="demo-message"
-                id="demo-message"
-                placeholder="Enter your message"
-                rows="6"
-              ></textarea>
-            </div>
-            <div class="col-6 col-12-small">
-              <input
-                type="checkbox"
-                name="send-copy"
-                value="yes"
-                id="send-copy"
-                checked
-              />
-              <label for="send-copy">Email me a copy</label>
-              <input type="hidden" name="send-copy" value="no" />
-            </div>
-            <div class="col-12">
-              <ul class="actions">
-                <li>
-                  <input type="submit" value="Send Message" class="primary" />
-                </li>
-                <li><input type="reset" value="Reset" /></li>
-              </ul>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
 
