@@ -2961,9 +2961,9 @@ button:disabled,
 
 .main.style2 {
   background-color: #333;
-  color: rgba(11, 10, 10, 0.75);
+  color: rgb(6, 6, 6);
   background-attachment: fixed, fixed;
-  background-image: url("images/stacks.jpg");
+  background-image: url("images/whitewave.jpg");
   background-size: auto, cover;
   background-position: center;
 }
@@ -3661,4 +3661,26 @@ body.is-preload #header:after {
   #footer {
     padding: 2em 1em 2em 1em;
   }
+}
+
+/* Elsa's custom CSS */
+.full-width-image {
+  width: 100%;
+}
+
+.text-xl {
+  font-size: 3em;
+}
+@media screen and (max-width: 480px) {
+  .text-xl {
+    font-size: 2.3em;
+  }
+}
+
+input[type="submit"].button-purple:hover,
+input[type="reset"].button-purple:hover,
+input[type="button"].button-purple:hover,
+button.button-purple:hover,
+.button.button-purple:hover {
+  background-color: #a9c7de34;
 }
