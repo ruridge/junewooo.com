@@ -147,27 +147,33 @@
           </div>
           <div class="col-6 col-12-medium">
             <form
+              name="contact"
               method="POST"
-              action="https://getform.io/f/c0009818-bf6d-4e09-8903-9edabf9e8588"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
+              <div style="display: none">
+                <label
+                  >Don't fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </div>
               <div>
-                <label for="name">First Name *</label>
+                <label for="first-name">First Name *</label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
-                  value=""
+                  name="first_name"
+                  id="first-name"
                   placeholder="Olivia"
                   required
                 />
               </div>
               <div>
-                <label for="family-name">Last Name</label>
+                <label for="last-name">Last Name</label>
                 <input
                   type="text"
-                  name="family-name"
-                  id="family-name"
-                  value=""
+                  name="last_name"
+                  id="last-name"
                   placeholder="Smith"
                 />
               </div>
@@ -177,7 +183,6 @@
                   type="email"
                   name="email"
                   id="email"
-                  value=""
                   placeholder="oliviasmith@example.com"
                   required
                 />
@@ -188,7 +193,6 @@
                   type="text"
                   name="company"
                   id="company"
-                  value=""
                   placeholder="Example Company Inc."
                   required
                 />
@@ -201,14 +205,13 @@
                   type="text"
                   name="website"
                   id="website"
-                  value=""
                   placeholder="www.example.com"
                 />
               </div>
               <div>
                 <label for="annual-sales">Annual TOTAL Sales</label>
-                <select name="annual-sales" id="annual-sales">
-                  <option value="none">- Please select -</option>
+                <select name="annual_sales" id="annual-sales">
+                  <option value="">- Please select -</option>
                   <option value="new">New to Market</option>
                   <option value="100K-$1M">100K - $1M</option>
                   <option value="$1M-$5M">$1M - $5M</option>
