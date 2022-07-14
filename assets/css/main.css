@@ -3264,7 +3264,7 @@ body.is-preload #header:after {
 #footer {
   padding: 6em 0 6em 0;
   background-color: #4686a0;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.85);
   background-attachment: fixed, fixed, fixed;
   background-image: url("images/bubble.jpg"),
     linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
@@ -3274,11 +3274,11 @@ body.is-preload #header:after {
 }
 
 #footer a {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+  /* border-bottom-color: transparent; */
 }
 
 #footer a:hover {
-  color: #ffffff;
+  color: rgba(0, 0, 255, 1);
 }
 
 #footer h1,
@@ -3353,7 +3353,7 @@ body.is-preload #header:after {
 }
 
 #footer ul.major-icons li .icon {
-  border-color: #ffffff;
+  /* border-color: #ffffff; */
 }
 
 #footer .icon.major {
@@ -3683,4 +3683,8 @@ input[type="button"].button-purple:hover,
 button.button-purple:hover,
 .button.button-purple:hover {
   background-color: #a9c7de34;
+}
+
+#one {
+  padding-bottom: 50px;
 }
