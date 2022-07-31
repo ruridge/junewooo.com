@@ -2751,6 +2751,14 @@ ul.major-icons li {
   margin-bottom: 2em;
 }
 
+.trust-logo a {
+  border-bottom: none;
+}
+
+.trust-logo img {
+  height: 50px;
+}
+
 /* Table */
 
 .table-wrapper {
