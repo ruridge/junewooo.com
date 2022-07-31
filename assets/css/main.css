@@ -3281,10 +3281,6 @@ body.is-preload #header:after {
   text-align: center;
 }
 
-#footer a {
-  /* border-bottom-color: transparent; */
-}
-
 #footer a:hover {
   color: rgba(0, 0, 255, 1);
 }
@@ -3358,10 +3354,6 @@ body.is-preload #header:after {
 #footer button.primary:active,
 #footer .button.primary:active {
   background-color: rgba(255, 255, 255, 0.25) !important;
-}
-
-#footer ul.major-icons li .icon {
-  /* border-color: #ffffff; */
 }
 
 #footer .icon.major {
